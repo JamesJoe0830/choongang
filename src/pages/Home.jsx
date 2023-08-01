@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import home from "../videos/home3.mp4";
 import './page.css';
 import { TypeAnimation } from 'react-type-animation';
+import Banner from "../components/Banner";
+
 export default function Home() {
   const [start, setStart] = useState(false);
   const handleStart = () => {
@@ -30,7 +32,9 @@ export default function Home() {
         </div>
     );
   } else {
-    <div className="home__wrapper"></div>
+    <div className="home__wrapper">
+      <Banner/>
+    </div>
 
   }
 }
